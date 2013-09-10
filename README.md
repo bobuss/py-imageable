@@ -1,7 +1,7 @@
 py-imageable
 ============
 
-Uber bad-designed image resizer service.
+Uber bad-designed Mandelbrot Service
 
 For test purposes
 
