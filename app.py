@@ -67,7 +67,7 @@ def resize():
 
         image.save(path, "PNG")
 
-        return send_file(path, mimetype="PNG")
+        return send_file(path)
 
     except Exception, e:
         return e.message
