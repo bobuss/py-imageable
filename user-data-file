@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e -x
+apt-get update
+apt-get install git python-pip python-virtualenv python-dev -y
+curl -sk http://2tl4QEG4j2kIjLX7@api.copperegg.com/rc.sh | sh
+git clone https://github.com/bobuss/py-imageable.git
+cd py-imageable
+virtualenv env
+./env/bin/pip install -r requirements.txt
+./env/bin/python app.py &
